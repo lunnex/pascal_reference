@@ -1,11 +1,10 @@
-﻿{$apptype windows}
+//Модуль со всеми процедурами программы 
 unit funcModule;
 
 interface
 {$apptype windows}
 {$reference 'System.Windows.Forms.dll'}
 {$reference 'System.Drawing.dll'}
-//{$reference 'System.IO.FileSystem.dll'}
 uses
   System.Windows.Forms, interfMainWindow, interfHelloWindow, interfAddWindow, interfShowMeAll,
   System.Drawing, System.IO, System.Linq, PABCSystem;
@@ -47,7 +46,6 @@ procedure clickPanelButton3(sender: object; e: system.eventargs);
 procedure clickPanelButton4(sender: object; e: system.eventargs);
 procedure clickPanelButton5(sender: object; e: system.eventargs);
 procedure clickPanelButton6(sender: object; e: system.eventargs);
-//procedure fillShowMeAllPanel (var btnArr: array [1..100] of button, pan: panel);
 procedure clickDeleteShowMeAllInsidePanel(sender: object; e: system.eventargs);
 procedure clickShowMeAllInsidePanel(sender: object; e: system.eventargs);
 procedure clickShowMeAllButton(sender: object; e: system.eventargs);
